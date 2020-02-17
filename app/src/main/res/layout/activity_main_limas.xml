@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLimas">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alas Segitiga"
+        android:inputType="number"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/etTS"
+        android:layout_below="@+id/etAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tinggi Segitiga"
+        android:inputType="number"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/etTLimas"
+        android:layout_below="@+id/etTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tinggi Limas"
+        android:inputType="number"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnHasil"
+        android:layout_below="@+id/etTLimas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HITUNG"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_below="@+id/btnHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="0.0"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
